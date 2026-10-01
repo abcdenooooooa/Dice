@@ -8,9 +8,9 @@ void draw()
 {
   sum = 0;
   background(100);
-  for (int x = 25; x <= 375; x += 25){
-    for (int y = 25; y <= 375; y += 25){
-      Die bob = new Die(x,y);
+  for (int i = 25; i <= 375; i += 25){
+    for (int j = 25; j <= 375; j += 25){
+      Die bob = new Die(i,j);
       bob.roll();
       bob.show();
     }
@@ -111,6 +111,5 @@ class Die //models one single dice cube
         ellipse(myX-6,myY+6,4,4);
       }
     }
-    
   }
 }
