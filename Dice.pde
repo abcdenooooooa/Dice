@@ -10,7 +10,8 @@ void draw()
   background(100);
   for (int i = 25; i <= 375; i += 25){
     for (int j = 25; j <= 375; j += 25){
-      Die bob = new Die(i,j);
+      Die bob;
+      bob = new Die(i,j);
       bob.roll();
       bob.show();
     }
